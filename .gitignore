@@ -1,0 +1,29 @@
+# python
+__pycache__
+.venv
+*.pyc
+
+# blender
+*.blend[0-9]
+
+# vim
+.*.sw[m-s]
+.sw[m-s]
+
+# zig
+zig-out
+.zig-cache
+.zigar-cache
+
+# clangd
+compile_commands.json
+.cache
+
+# typescript
+lib
+
+# node
+node_modules
+
+# gdb
+.gdb_history

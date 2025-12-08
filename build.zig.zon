@@ -1,0 +1,30 @@
+.{
+    .name = .dvui_code,
+    .version = "0.1.0",
+    .minimum_zig_version = "0.15.2",
+    .fingerprint = 0xf0004a9166431beb,
+    .dependencies = .{
+        .dvui = .{
+            .url = "https://github.com/david-vanderson/dvui/archive/7dcfea127aca2b9dad476071500cb61e138975b6.tar.gz",
+            .hash = "dvui-0.4.0-dev-AQFJmQD92QCHzo0SadvrBdwPA14R6KcXw3IPu9qmSuuL",
+        },
+        .@"zig-tree-sitter" = .{
+            .url = "https://github.com/tree-sitter/zig-tree-sitter/archive/a53dac49d66562006e84dd11211b7ae40db68263.tar.gz",
+            .hash = "tree_sitter-0.25.0-8heIf4KZAQB9VQhOgtGaSvAJFbBn1t08wtsrkce4uEnI",
+        },
+        .@"tree-sitter-python" = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-python/archive/v0.25.0.tar.gz",
+            .hash = "12201bfcaf3a0bd6ab974eab69dc4257ddf83765402c791fd6f0c762dceb4cdd221b",
+        },
+        .@"tree-sitter-javascript" = .{
+            .url = "https://github.com/tree-sitter/tree-sitter-javascript/archive/v0.23.0.tar.gz",
+            .hash = "N-V-__8AAKNyNAAdLgRLbgt9qLfEoacS0uA7fULPPEY7ZuBF",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "src",
+        "examples",
+    },
+}
