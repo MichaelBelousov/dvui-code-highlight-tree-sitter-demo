@@ -3,14 +3,12 @@ const dvui = @import("dvui");
 const ts = @import("tree-sitter");
 const ts_wrapper = @import("tree_sitter.zig");
 
-// Re-export tree_sitter wrapper for public use
 pub const tree_sitter = ts_wrapper;
 
+// TODO: replace all this theme stuff with tree-sitter's own highlighting logic
 /// Configuration for language-specific syntax highlighting
 pub const LanguageConfig = struct {
-    /// Keywords to highlight (e.g., "def", "class", "if", etc.)
     keywords: []const []const u8 = &.{},
-    /// Node types to highlight even when they have children
     special_nodes: []const []const u8 = &.{},
 
     pub const Python = LanguageConfig{
